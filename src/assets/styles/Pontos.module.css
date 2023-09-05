@@ -1,0 +1,49 @@
+.pontos {
+    display: grid;
+    justify-content: center;
+    transition: .5s;
+    text-align: center;
+    border-top: 1px solid #45120523;
+}
+
+.pontos ul {
+    list-style: none !important;
+    margin: 10px 0;
+    padding: 0;
+    max-height: 400px;
+    overflow: auto;
+}
+.pontos li {
+    margin: 1rem;
+    position: relative;
+}
+
+.pontos li button{
+    transition: .3s;
+}
+.pontos li button:hover,
+.pontos li button:focus {
+    color: #DA8E3C;
+    border-radius: 4px;
+    font-size: 140%;
+}
+
+.pontos li button:hover::after,
+.pontos li button:focus::after{
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-color: #451205;
+    border-radius: 4px;
+    position: absolute;
+    left: -10px;
+    top: 1rem;
+    z-index: 99;
+    animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotate(360deg);
+    }
+}
