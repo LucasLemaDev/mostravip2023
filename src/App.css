@@ -93,7 +93,7 @@ img{
 .active {
   color: #C94421 !important;
   transition: .2s;
-  font-size: 160%;
+  font-size: 120%;
 }
 
 h1, h2{
