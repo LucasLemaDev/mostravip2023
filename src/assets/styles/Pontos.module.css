@@ -4,6 +4,7 @@
     transition: .5s;
     text-align: center;
     border-top: 1px solid #45120523;
+    font-size: 1rem;
 }
 
 .pontos ul {
@@ -24,7 +25,7 @@
 .pontos li button:focus {
     color: #DA8E3C;
     border-radius: 4px;
-    font-size: 140%;
+    font-size: 1.75rem;
 }
 
 .pontos li button:hover::after,
@@ -49,6 +50,6 @@
 
 @media (max-width: 400px) {
     .pontos ul{
-        max-height: 200px;
+        max-height: 300px;
     }
 }
